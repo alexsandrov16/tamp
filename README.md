@@ -1,1 +1,3 @@
-# tamp
+# TAMP
+
+Termux Apache MySQL PHP
