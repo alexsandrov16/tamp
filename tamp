@@ -1,7 +1,11 @@
 #!/bin/bash
 
 function main(){
-	echo "ready"
+	if [ "$	"="" ];then
+		echo "Hola Mundo"
+	else
+		echo "Hola $1"
+	fi
 }
 
-main
+main "PHP"
