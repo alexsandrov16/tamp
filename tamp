@@ -1,11 +1,19 @@
 #!/bin/bash
 
-function main(){
-	if [ "$	"="" ];then
-		echo "Hola Mundo"
-	else
-		echo "Hola $1"
-	fi
+installing(){
+	echo "Preparando instalación"
+	pkg install php php-apache -y
+}
+folder(){
+	dir=/data/data/com.termux/files/home/www
+	mkdir $dir
+	echo "<?php phpinfo();" > $dir/index.php
 }
 
-main "PHP"
+main(){
+	installing
+	folder
+	echo "Instalación terminada"
+}
+
+main
